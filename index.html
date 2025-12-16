@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMaster Serwis - Profesjonalny Warsztat Samochodowy</title>
+    <meta name="description" content="Profesjonalny serwis samochodowy. Mechanika, diagnostyka, klimatyzacja, wulkanizacja. Zaufaj ekspertom!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo-gold-transparent.png" alt="AutoMaster Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Strona Główna</a></li>
+                <li><a href="o-nas.html">O Nas</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="cennik.html">Cennik</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Przełącz motyw">🌙</button>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/logo-gold-transparent.png" alt="AutoMaster" class="hero-logo">
+            <h1>Twój samochód w <span class="gold-text">najlepszych rękach</span></h1>
+            <p>Profesjonalny serwis samochodowy. Mechanika, diagnostyka, klimatyzacja i wulkanizacja. Zaufaj ekspertom z wieloletnim doświadczeniem.</p>
+            <div class="cta-buttons">
+                <a href="cennik.html" class="btn btn-primary">Zobacz Cennik</a>
+                <a href="#kontakt" class="btn btn-outline">Kontakt</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Co mówią nasi klienci</h2>
+                <p>Dołącz do tysięcy zadowolonych kierowców</p>
+            </div>
+            <div class="grid-3">
+                <div class="card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Najlepszy serwis w okolicy! Szybka diagnoza, uczciwe ceny i profesjonalna obsługa. Polecam każdemu!"</blockquote>
+                    <p class="author">— Marek K.</p>
+                </div>
+                <div class="card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Oddałem auto z problemem silnika, naprawili w jeden dzień. Świetna komunikacja i fair podejście."</blockquote>
+                    <p class="author">— Anna W.</p>
+                </div>
+                <div class="card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Korzystam od lat i nigdy nie zawiodłem się na jakości usług. Zawsze wszystko wyjaśnią i doradzą."</blockquote>
+                    <p class="author">— Tomasz S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nasze Usługi</h2>
+                <p>Kompleksowa obsługa Twojego pojazdu</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Mechanika Pojazdowa</h3>
+                    <p>Przeglądy, naprawy silników, wymiana rozrządu i oleju.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛑</div>
+                    <h3>Układ Hamulcowy</h3>
+                    <p>Klocki, tarcze, zaciski, płyn i przewody hamulcowe.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Diagnostyka Komputerowa</h3>
+                    <p>Odczyt błędów, diagnostyka systemów elektronicznych.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❄️</div>
+                    <h3>Serwis Klimatyzacji</h3>
+                    <p>Uzupełnienie czynnika, dezynfekcja, test szczelności.</p>
+                </div>
+            </div>
+            <div class="show-more-btn">
+                <a href="uslugi.html" class="btn btn-primary">Zobacz Wszystkie Usługi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontakt</h2>
+                <p>Masz pytania? Zadzwoń lub odwiedź nas!</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-sm);">📍</div>
+                    <h3>Adres</h3>
+                    <p>ul. Warsztatowa 15<br>00-001 Warszawa</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-sm);">📞</div>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto var(--spacing-sm);">🕐</div>
+                    <h3>Godziny Otwarcia</h3>
+                    <p>Pon-Pt: 8:00 - 18:00<br>Sob: 9:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>AutoMaster Serwis</h3>
+                    <p>Profesjonalny warsztat samochodowy z wieloletnim doświadczeniem. Twój samochód w najlepszych rękach.</p>
+                </div>
+                <div>
+                    <h3>Szybkie Linki</h3>
+                    <ul>
+                        <li><a href="o-nas.html">O Nas</a></li>
+                        <li><a href="uslugi.html">Usługi</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>📍 ul. Warsztatowa 15, Warszawa</li>
+                        <li>📞 +48 123 456 789</li>
+                        <li>✉️ kontakt@automaster.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoMaster Serwis. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cennik - AutoMaster Serwis</title>
+    <meta name="description"
+        content="Sprawdź cennik usług AutoMaster Serwis. Transparentne ceny, bez ukrytych kosztów. Mechanika, diagnostyka, klimatyzacja, wulkanizacja.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo-gold-transparent.png" alt="AutoMaster Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="o-nas.html">O Nas</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="cennik.html" class="active">Cennik</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Przełącz motyw">🌙</button>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section style="background: var(--bg-secondary); padding-top: 120px;">
+        <div class="container">
+            <div class="section-title">
+                <h1><span class="gold-text">Cennik</span> Usług</h1>
+                <p>Przejrzyste ceny bez ukrytych kosztów</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Blocks -->
+    <section>
+        <div class="container">
+
+            <!-- Mechanika Pojazdowa -->
+            <div class="price-block">
+                <div class="price-block-header">🔧 Mechanika Pojazdowa</div>
+                <ul class="price-list">
+                    <li><span>Przegląd okresowy</span><span class="price">od 150 zł</span></li>
+                    <li><span>Przegląd serwisowy</span><span class="price">od 200 zł</span></li>
+                    <li><span>Naprawa silnika</span><span class="price">od 500 zł</span></li>
+                    <li><span>Wymiana rozrządu</span><span class="price">od 600 zł</span></li>
+                    <li><span>Wymiana paska klinowego</span><span class="price">od 150 zł</span></li>
+                    <li><span>Naprawa sprzęgła</span><span class="price">od 800 zł</span></li>
+                    <li><span>Wymiana oleju + filtr</span><span class="price">od 120 zł</span></li>
+                </ul>
+            </div>
+
+            <!-- Układ Hamulcowy -->
+            <div class="price-block">
+                <div class="price-block-header">🛑 Układ Hamulcowy</div>
+                <ul class="price-list">
+                    <li><span>Wymiana klocków hamulcowych (oś)</span><span class="price">od 100 zł</span></li>
+                    <li><span>Wymiana tarcz hamulcowych (oś)</span><span class="price">od 150 zł</span></li>
+                    <li><span>Naprawa zacisku</span><span class="price">od 200 zł</span></li>
+                    <li><span>Wymiana cylinderka</span><span class="price">od 150 zł</span></li>
+                    <li><span>Wymiana płynu hamulcowego</span><span class="price">od 100 zł</span></li>
+                    <li><span>Wymiana przewodów hamulcowych</span><span class="price">od 80 zł</span></li>
+                </ul>
+            </div>
+
+            <!-- Diagnostyka Komputerowa -->
+            <div class="price-block">
+                <div class="price-block-header">💻 Diagnostyka Komputerowa</div>
+                <ul class="price-list">
+                    <li><span>Odczyt kodów błędów</span><span class="price">50 zł</span></li>
+                    <li><span>Kasowanie błędów</span><span class="price">50 zł</span></li>
+                    <li><span>Pełna diagnostyka silnika</span><span class="price">od 150 zł</span></li>
+                    <li><span>Test systemów ABS/ESP/AirBag</span><span class="price">od 100 zł</span></li>
+                    <li><span>Analiza parametrów (live data)</span><span class="price">od 100 zł</span></li>
+                </ul>
+            </div>
+
+            <!-- Serwis Klimatyzacji -->
+            <div class="price-block">
+                <div class="price-block-header">❄️ Serwis Klimatyzacji</div>
+                <ul class="price-list">
+                    <li><span>Uzupełnienie czynnika</span><span class="price">od 150 zł</span></li>
+                    <li><span>Wymiana czynnika</span><span class="price">od 250 zł</span></li>
+                    <li><span>Dezynfekcja układu (ozonowanie)</span><span class="price">od 100 zł</span></li>
+                    <li><span>Test szczelności</span><span class="price">od 100 zł</span></li>
+                    <li><span>Wymiana filtra kabinowego</span><span class="price">od 50 zł</span></li>
+                </ul>
+            </div>
+
+            <!-- Wulkanizacja -->
+            <div class="price-block">
+                <div class="price-block-header">🔩 Wulkanizacja</div>
+                <ul class="price-list">
+                    <li><span>Naprawa przebitej opony</span><span class="price">od 30 zł</span></li>
+                    <li><span>Wymiana wentyla</span><span class="price">od 15 zł</span></li>
+                    <li><span>Pompowanie azotem (4 koła)</span><span class="price">od 40 zł</span></li>
+                </ul>
+            </div>
+
+            <!-- Wymiana Opon -->
+            <div class="price-block">
+                <div class="price-block-header">🚗 Wymiana Opon</div>
+                <ul class="price-list">
+                    <li><span>Wymiana opon (4 koła)</span><span class="price">od 80 zł</span></li>
+                    <li><span>Wyważanie kół (4 koła)</span><span class="price">od 60 zł</span></li>
+                    <li><span>Wymiana + wyważanie (4 koła)</span><span class="price">od 120 zł</span></li>
+                    <li><span>Przechowywanie opon (sezon)</span><span class="price">od 100 zł</span></li>
+                </ul>
+            </div>
+
+            <p style="text-align: center; color: var(--text-muted); margin-top: var(--spacing-lg);">
+                * Podane ceny są orientacyjne i mogą się różnić w zależności od modelu pojazdu. Dokładną wycenę
+                otrzymasz po diagnozie.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--bg-secondary);">
+        <div class="container" style="text-align: center;">
+            <h2>Masz Pytania?</h2>
+            <p style="max-width: 600px; margin: 0 auto var(--spacing-md);">Zadzwoń do nas, aby uzyskać dokładną wycenę
+                dla Twojego pojazdu.</p>
+            <a href="index.html#kontakt" class="btn btn-primary">Kontakt</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>AutoMaster Serwis</h3>
+                    <p>Profesjonalny warsztat samochodowy z wieloletnim doświadczeniem. Twój samochód w najlepszych
+                        rękach.</p>
+                </div>
+                <div>
+                    <h3>Szybkie Linki</h3>
+                    <ul>
+                        <li><a href="o-nas.html">O Nas</a></li>
+                        <li><a href="uslugi.html">Usługi</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>📍 ul. Warsztatowa 15, Warszawa</li>
+                        <li>📞 +48 123 456 789</li>
+                        <li>✉️ kontakt@automaster.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoMaster Serwis. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi - AutoMaster Serwis</title>
+    <meta name="description"
+        content="Pełna oferta usług AutoMaster Serwis: mechanika pojazdowa, układ hamulcowy, diagnostyka komputerowa, klimatyzacja, wulkanizacja, wymiana opon.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo-gold-transparent.png" alt="AutoMaster Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="o-nas.html">O Nas</a></li>
+                <li><a href="uslugi.html" class="active">Usługi</a></li>
+                <li><a href="cennik.html">Cennik</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Przełącz motyw">🌙</button>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section style="background: var(--bg-secondary); padding-top: 120px;">
+        <div class="container">
+            <div class="section-title">
+                <h1>Nasze <span class="gold-text">Usługi</span></h1>
+                <p>Kompleksowa obsługa Twojego pojazdu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section>
+        <div class="container">
+
+            <!-- Mechanika Pojazdowa -->
+            <div class="service-category">
+                <h3><span class="icon">🔧</span> Mechanika Pojazdowa</h3>
+                <ul class="service-list">
+                    <li>Przeglądy okresowe i serwisowe</li>
+                    <li>Naprawa silnika i układu napędowego</li>
+                    <li>Wymiana rozrządu i paska klinowego</li>
+                    <li>Naprawa sprzęgła</li>
+                    <li>Wymiana oleju i filtrów</li>
+                </ul>
+            </div>
+
+            <!-- Układ Hamulcowy -->
+            <div class="service-category">
+                <h3><span class="icon">🛑</span> Układ Hamulcowy</h3>
+                <ul class="service-list">
+                    <li>Wymiana klocków i tarcz hamulcowych</li>
+                    <li>Naprawa zacisków i cylindrów</li>
+                    <li>Wymiana płynu hamulcowego</li>
+                    <li>Wymiana przewodów hamulcowych</li>
+                </ul>
+            </div>
+
+            <!-- Diagnostyka Komputerowa -->
+            <div class="service-category">
+                <h3><span class="icon">💻</span> Diagnostyka Komputerowa</h3>
+                <ul class="service-list">
+                    <li>Odczyt i kasowanie kodów błędów</li>
+                    <li>Diagnostyka silnika i układów elektronicznych</li>
+                    <li>Test systemów ABS, ESP, AirBag</li>
+                    <li>Analiza parametrów w czasie rzeczywistym</li>
+                </ul>
+            </div>
+
+            <!-- Serwis Klimatyzacji -->
+            <div class="service-category">
+                <h3><span class="icon">❄️</span> Serwis Klimatyzacji</h3>
+                <ul class="service-list">
+                    <li>Uzupełnienie i wymiana czynnika</li>
+                    <li>Dezynfekcja i czyszczenie układu</li>
+                    <li>Test szczelności</li>
+                    <li>Wymiana filtrów kabinowych</li>
+                </ul>
+            </div>
+
+            <!-- Wulkanizacja -->
+            <div class="service-category">
+                <h3><span class="icon">🔩</span> Wulkanizacja</h3>
+                <ul class="service-list">
+                    <li>Naprawa przebitych opon</li>
+                    <li>Wymiana wentyli</li>
+                    <li>Pompowanie azotu</li>
+                </ul>
+            </div>
+
+            <!-- Wymiana Opon -->
+            <div class="service-category">
+                <h3><span class="icon">🚗</span> Wymiana Opon</h3>
+                <ul class="service-list">
+                    <li>Wymiana opon letnich/zimowych</li>
+                    <li>Wyważanie kół komputerowe</li>
+                    <li>Doradztwo w doborze opon</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--bg-secondary);">
+        <div class="container" style="text-align: center;">
+            <h2>Sprawdź Nasz Cennik</h2>
+            <p style="max-width: 600px; margin: 0 auto var(--spacing-md);">Transparentne ceny bez ukrytych kosztów.
+                Sprawdź ile zapłacisz za interesującą Cię usługę.</p>
+            <div class="cta-buttons">
+                <a href="cennik.html" class="btn btn-primary">Zobacz Cennik</a>
+                <a href="index.html#kontakt" class="btn btn-outline">Kontakt</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>AutoMaster Serwis</h3>
+                    <p>Profesjonalny warsztat samochodowy z wieloletnim doświadczeniem. Twój samochód w najlepszych
+                        rękach.</p>
+                </div>
+                <div>
+                    <h3>Szybkie Linki</h3>
+                    <ul>
+                        <li><a href="o-nas.html">O Nas</a></li>
+                        <li><a href="uslugi.html">Usługi</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>📍 ul. Warsztatowa 15, Warszawa</li>
+                        <li>📞 +48 123 456 789</li>
+                        <li>✉️ kontakt@automaster.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoMaster Serwis. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

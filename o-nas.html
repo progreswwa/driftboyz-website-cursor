@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Nas - AutoMaster Serwis</title>
+    <meta name="description"
+        content="Poznaj AutoMaster Serwis - profesjonalny zespół mechaników z wieloletnim doświadczeniem. Dowiedz się, co nas wyróżnia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo-gold-transparent.png" alt="AutoMaster Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="o-nas.html" class="active">O Nas</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="cennik.html">Cennik</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Przełącz motyw">🌙</button>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero" style="background: var(--bg-secondary); padding-top: 120px;">
+        <div class="container">
+            <div class="section-title">
+                <h1>Kim <span class="gold-text">Jesteśmy</span></h1>
+                <p>Profesjonalny zespół z pasją do motoryzacji</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nasza Historia</h2>
+                    <p>AutoMaster Serwis to rodzinny warsztat samochodowy z ponad 15-letnim doświadczeniem w branży
+                        motoryzacyjnej. Zaczynaliśmy jako mały garaż, a dziś jesteśmy jednym z najbardziej zaufanych
+                        serwisów w regionie.</p>
+                    <p>Nasz zespół to wykwalifikowani mechanicy, którzy regularnie podnoszą swoje kwalifikacje i śledzą
+                        najnowsze technologie motoryzacyjne. Łączymy tradycyjne rzemiosło z nowoczesnym sprzętem
+                        diagnostycznym.</p>
+                    <p>Stawiamy na uczciwość, transparentność i jakość. Każdy klient jest dla nas ważny, a każdy
+                        samochód traktujemy jak własny.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/gallery-1.jpg" alt="Nasz warsztat"
+                        style="width: 100%; border-radius: var(--radius-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Co Nas Wyróżnia</h2>
+                <p>Dlaczego klienci nam ufają</p>
+            </div>
+            <div class="grid-3 features-grid">
+                <div class="card feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <div>
+                        <h3>15 Lat Doświadczenia</h3>
+                        <p>Tysiące naprawionych pojazdów i setki zadowolonych klientów.</p>
+                    </div>
+                </div>
+                <div class="card feature-item">
+                    <div class="feature-icon">💎</div>
+                    <div>
+                        <h3>Uczciwe Ceny</h3>
+                        <p>Transparentny cennik bez ukrytych kosztów. Wiesz za co płacisz.</p>
+                    </div>
+                </div>
+                <div class="card feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div>
+                        <h3>Szybka Realizacja</h3>
+                        <p>Większość napraw wykonujemy tego samego dnia.</p>
+                    </div>
+                </div>
+                <div class="card feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <div>
+                        <h3>Gwarancja na Usługi</h3>
+                        <p>Na wszystkie naprawy udzielamy gwarancji jakości.</p>
+                    </div>
+                </div>
+                <div class="card feature-item">
+                    <div class="feature-icon">🛠️</div>
+                    <div>
+                        <h3>Nowoczesny Sprzęt</h3>
+                        <p>Profesjonalne narzędzia i najnowsze urządzenia diagnostyczne.</p>
+                    </div>
+                </div>
+                <div class="card feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <div>
+                        <h3>Indywidualne Podejście</h3>
+                        <p>Każdy klient i każdy samochód są dla nas wyjątkowi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2>Gotowy na Wizytę?</h2>
+            <p style="max-width: 600px; margin: 0 auto var(--spacing-md);">Zadzwoń do nas lub sprawdź naszą ofertę.
+                Chętnie odpowiemy na wszystkie pytania i umówimy dogodny termin.</p>
+            <div class="cta-buttons">
+                <a href="uslugi.html" class="btn btn-primary">Nasze Usługi</a>
+                <a href="index.html#kontakt" class="btn btn-outline">Kontakt</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>AutoMaster Serwis</h3>
+                    <p>Profesjonalny warsztat samochodowy z wieloletnim doświadczeniem. Twój samochód w najlepszych
+                        rękach.</p>
+                </div>
+                <div>
+                    <h3>Szybkie Linki</h3>
+                    <ul>
+                        <li><a href="o-nas.html">O Nas</a></li>
+                        <li><a href="uslugi.html">Usługi</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>📍 ul. Warsztatowa 15, Warszawa</li>
+                        <li>📞 +48 123 456 789</li>
+                        <li>✉️ kontakt@automaster.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoMaster Serwis. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

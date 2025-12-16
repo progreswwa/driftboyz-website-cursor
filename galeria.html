@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - AutoMaster Serwis</title>
+    <meta name="description" content="Zobacz nasz warsztat i realizacje. Galeria zdjęć AutoMaster Serwis.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo-gold-transparent.png" alt="AutoMaster Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="o-nas.html">O Nas</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="cennik.html">Cennik</a></li>
+                <li><a href="galeria.html" class="active">Galeria</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Przełącz motyw">🌙</button>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section style="background: var(--bg-secondary); padding-top: 120px;">
+        <div class="container">
+            <div class="section-title">
+                <h1><span class="gold-text">Galeria</span></h1>
+                <p>Zobacz nasz warsztat i realizacje</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section>
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Warsztat samochodowy - stanowisko naprawcze">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Diagnostyka komputerowa pojazdu">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Profesjonalny sprzęt warsztatowy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--bg-secondary);">
+        <div class="container" style="text-align: center;">
+            <h2>Odwiedź Nas!</h2>
+            <p style="max-width: 600px; margin: 0 auto var(--spacing-md);">Przekonaj się osobiście o jakości naszych
+                usług. Zapraszamy do naszego warsztatu.</p>
+            <div class="cta-buttons">
+                <a href="index.html#kontakt" class="btn btn-primary">Zobacz Jak Dojechać</a>
+                <a href="uslugi.html" class="btn btn-outline">Nasze Usługi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>AutoMaster Serwis</h3>
+                    <p>Profesjonalny warsztat samochodowy z wieloletnim doświadczeniem. Twój samochód w najlepszych
+                        rękach.</p>
+                </div>
+                <div>
+                    <h3>Szybkie Linki</h3>
+                    <ul>
+                        <li><a href="o-nas.html">O Nas</a></li>
+                        <li><a href="uslugi.html">Usługi</a></li>
+                        <li><a href="cennik.html">Cennik</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>📍 ul. Warsztatowa 15, Warszawa</li>
+                        <li>📞 +48 123 456 789</li>
+                        <li>✉️ kontakt@automaster.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoMaster Serwis. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
