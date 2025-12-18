@@ -1,29 +1,3 @@
-<<<<<<< Current (Your changes)
-// Theme Toggle
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
-}
-
-function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-}
-
-function updateThemeIcon(theme) {
-    const btn = document.querySelector('.theme-toggle');
-    if (btn) {
-        btn.innerHTML = theme === 'dark' ? '☀️' : '🌙';
-        btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
-    }
-}
-
-=======
->>>>>>> Incoming (Background Agent changes)
 // Mobile Menu Toggle
 function initMobileMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
