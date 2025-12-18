@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="light">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usługi - AutoMaster Serwis</title>
+    <title>Usługi - DriftBoyz | Mechanika, Tuning, Przygotowanie do Driftu</title>
     <meta name="description"
-        content="Pełna oferta usług AutoMaster Serwis: mechanika pojazdowa, układ hamulcowy, diagnostyka komputerowa, klimatyzacja, wulkanizacja, wymiana opon.">
+        content="Pełna oferta usług DriftBoyz: mechanika sportowa, tuning, przygotowanie aut do driftu, diagnostyka komputerowa, serwis zawieszenia. Profesjonalny serwis dla aut sportowych.">
+    <meta name="keywords"
+        content="usługi warsztatowe, mechanika sportowa, tuning, przygotowanie do driftu, diagnostyka, zawieszenie sportowe">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.driftboyz.pl/uslugi.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.driftboyz.pl/uslugi.html">
+    <meta property="og:title" content="Usługi - DriftBoyz">
+    <meta property="og:description"
+        content="Pełna oferta usług dla aut sportowych i driftowych: mechanika, tuning, diagnostyka, serwis zawieszenia.">
+    <meta property="og:image" content="https://www.driftboyz.pl/images/logo-gold-transparent.png">
+    <meta property="og:locale" content="pl_PL">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.driftboyz.pl/uslugi.html">
+    <meta name="twitter:title" content="Usługi - DriftBoyz">
+    <meta name="twitter:description" content="Pełna oferta usług dla aut sportowych i driftowych.">
+    <meta name="twitter:image" content="https://www.driftboyz.pl/images/logo-gold-transparent.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,111 +45,150 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html">
-            <img src="images/logo-gold-transparent.png" alt="AutoMaster Logo" class="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="o-nas.html">O Nas</a></li>
-                <li><a href="uslugi.html" class="active">Usługi</a></li>
-                <li><a href="cennik.html">Cennik</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-            </ul>
-        </nav>
-        <div class="header-controls">
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Przełącz motyw">🌙</button>
-            <button class="menu-toggle" aria-label="Menu">☰</button>
+        <div class="header-wrapper">
+            <a href="index.html" class="logo-link">
+                <img src="images/driftboyz-logo-white-transparent.png" alt="DriftBoyz Logo" class="logo logo-dark"
+                    width="180" height="60" loading="eager">
+                <img src="images/driftboyz-logo-black-transparent.png" alt="DriftBoyz Logo" class="logo logo-light"
+                    width="180" height="60" loading="eager">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="o-nas.html">O Nas</a></li>
+                    <li><a href="uslugi.html" class="active">Usługi</a></li>
+                    <li><a href="cennik.html">Cennik</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="menu-toggle" aria-label="Otwórz menu nawigacji" aria-expanded="false"><svg width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg></button>
+            </div>
         </div>
     </header>
 
     <!-- Page Header -->
-    <section style="background: var(--bg-secondary); padding-top: 120px;">
+    <section class="page-header">
         <div class="container">
+            <nav class="breadcrumbs" aria-label="Nawigacja okruszkowa">
+                <a href="index.html">Strona Główna</a>
+                <span>/</span>
+                <span class="current">Usługi</span>
+            </nav>
             <div class="section-title">
                 <h1>Nasze <span class="gold-text">Usługi</span></h1>
-                <p>Kompleksowa obsługa Twojego pojazdu</p>
+                <p>Kompleksowa obsługa aut sportowych i driftowych</p>
             </div>
         </div>
     </section>
 
-    <!-- Services List -->
-    <section>
+    <!-- Services Clean Grid -->
+    <section class="services-page">
         <div class="container">
 
-            <!-- Mechanika Pojazdowa -->
-            <div class="service-category">
-                <h3><span class="icon">🔧</span> Mechanika Pojazdowa</h3>
-                <ul class="service-list">
-                    <li>Przeglądy okresowe i serwisowe</li>
-                    <li>Naprawa silnika i układu napędowego</li>
-                    <li>Wymiana rozrządu i paska klinowego</li>
-                    <li>Naprawa sprzęgła</li>
-                    <li>Wymiana oleju i filtrów</li>
-                </ul>
+            <div class="clean-grid">
+
+                <!-- Card 1 -->
+                <div class="clean-card">
+                    <div class="clean-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C1.4 11.3 1 12.1 1 13v3c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                    </div>
+                    <h3>Przygotowanie do Driftu</h3>
+                    <p>Kompleksowa budowa i setup aut do sportu. Klatki, zawieszenia, modyfikacje skrętu.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="clean-card">
+                    <div class="clean-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3>Mechanika Sportowa</h3>
+                    <p>Serwis silników wyczynowych, układów napędowych i regeneracja podzespołów.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="clean-card">
+                    <div class="clean-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <h3>Tuning &amp; Modyfikacje</h3>
+                    <p>Zwiększanie mocy (Chip tuning), montaże turbosprężarek i sportowych układów wydechowych.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="clean-card">
+                    <div class="clean-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h3>Diagnostyka</h3>
+                    <p>Zaawansowana diagnostyka komputerowa, analiza parametrów live data i kodowanie sterowników.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="clean-card">
+                    <div class="clean-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                        </svg>
+                    </div>
+                    <h3>Zawieszenia</h3>
+                    <p>Geometria 3D, setup pod drift/track, wymiana wahaczy i tulei poliuretanowych.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="clean-card">
+                    <div class="clean-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                        </svg>
+                    </div>
+                    <h3>Układ Hamulcowy</h3>
+                    <p>Big Brake Kit, przewody w oplocie, hydrauliczne ręczne i sportowe klocki.</p>
+                </div>
+
             </div>
 
-            <!-- Układ Hamulcowy -->
-            <div class="service-category">
-                <h3><span class="icon">🛑</span> Układ Hamulcowy</h3>
-                <ul class="service-list">
-                    <li>Wymiana klocków i tarcz hamulcowych</li>
-                    <li>Naprawa zacisków i cylindrów</li>
-                    <li>Wymiana płynu hamulcowego</li>
-                    <li>Wymiana przewodów hamulcowych</li>
-                </ul>
-            </div>
-
-            <!-- Diagnostyka Komputerowa -->
-            <div class="service-category">
-                <h3><span class="icon">💻</span> Diagnostyka Komputerowa</h3>
-                <ul class="service-list">
-                    <li>Odczyt i kasowanie kodów błędów</li>
-                    <li>Diagnostyka silnika i układów elektronicznych</li>
-                    <li>Test systemów ABS, ESP, AirBag</li>
-                    <li>Analiza parametrów w czasie rzeczywistym</li>
-                </ul>
-            </div>
-
-            <!-- Serwis Klimatyzacji -->
-            <div class="service-category">
-                <h3><span class="icon">❄️</span> Serwis Klimatyzacji</h3>
-                <ul class="service-list">
-                    <li>Uzupełnienie i wymiana czynnika</li>
-                    <li>Dezynfekcja i czyszczenie układu</li>
-                    <li>Test szczelności</li>
-                    <li>Wymiana filtrów kabinowych</li>
-                </ul>
-            </div>
-
-            <!-- Wulkanizacja -->
-            <div class="service-category">
-                <h3><span class="icon">🔩</span> Wulkanizacja</h3>
-                <ul class="service-list">
-                    <li>Naprawa przebitych opon</li>
-                    <li>Wymiana wentyli</li>
-                    <li>Pompowanie azotu</li>
-                </ul>
-            </div>
-
-            <!-- Wymiana Opon -->
-            <div class="service-category">
-                <h3><span class="icon">🚗</span> Wymiana Opon</h3>
-                <ul class="service-list">
-                    <li>Wymiana opon letnich/zimowych</li>
-                    <li>Wyważanie kół komputerowe</li>
-                    <li>Doradztwo w doborze opon</li>
-                </ul>
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="cennik.html" class="btn btn-primary">Sprawdź Cennik</a>
             </div>
 
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section style="background: var(--bg-secondary);">
-        <div class="container" style="text-align: center;">
+    <section class="cta-section">
+        <div class="container">
             <h2>Sprawdź Nasz Cennik</h2>
-            <p style="max-width: 600px; margin: 0 auto var(--spacing-md);">Transparentne ceny bez ukrytych kosztów.
+            <p>Transparentne ceny bez ukrytych kosztów.
                 Sprawdź ile zapłacisz za interesującą Cię usługę.</p>
             <div class="cta-buttons">
                 <a href="cennik.html" class="btn btn-primary">Zobacz Cennik</a>
@@ -134,9 +202,9 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <h3>AutoMaster Serwis</h3>
-                    <p>Profesjonalny warsztat samochodowy z wieloletnim doświadczeniem. Twój samochód w najlepszych
-                        rękach.</p>
+                    <h3>DriftBoyz</h3>
+                    <p>Profesjonalny warsztat specjalizujący się w przygotowaniu aut do driftu. Twoje auto, nasza pasja.
+                    </p>
                 </div>
                 <div>
                     <h3>Szybkie Linki</h3>
@@ -150,19 +218,115 @@
                 <div>
                     <h3>Kontakt</h3>
                     <ul>
-                        <li>📍 ul. Warsztatowa 15, Warszawa</li>
-                        <li>📞 +48 123 456 789</li>
-                        <li>✉️ kontakt@automaster.pl</li>
+                        <li>📍 Piastów, ul. Warszawska 49/51</li>
+                        <li>📞 <a href="tel:+48515063677">515 063 677</a></li>
+                        <li>✉️ <a href="mailto:kontakt@driftboyz.pl">kontakt@driftboyz.pl</a></li>
                     </ul>
+                </div>
+                <div>
+                    <h3>Śledź Nas</h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+                            class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AutoMaster Serwis. Wszelkie prawa zastrzeżone.</p>
+                <p>&copy; 2025 DriftBoyz. Wszelkie prawa zastrzeżone.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Drift Car Preparation & Tuning Services",
+        "provider": {
+            "@type": "AutoRepair",
+            "name": "DriftBoyz",
+            "url": "https://www.driftboyz.pl"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Usługi warsztatowe",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Przygotowanie do Driftu"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mechanika Sportowa"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tuning & Modyfikacje"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Diagnostyka Komputerowa"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Serwis Zawieszenia"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Układ Hamulcowy"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Przewiń do góry" title="Przewiń do góry">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
 </body>
 
 </html>

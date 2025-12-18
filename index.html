@@ -1,170 +1,554 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="light">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoMaster Serwis - Profesjonalny Warsztat Samochodowy</title>
-    <meta name="description" content="Profesjonalny serwis samochodowy. Mechanika, diagnostyka, klimatyzacja, wulkanizacja. Zaufaj ekspertom!">
+    <title>DriftBoyz - Profesjonalny Warsztat Driftowy</title>
+    <meta name="description"
+        content="DriftBoyz - profesjonalny warsztat samochodowy specjalizujący się w przygotowaniu aut do driftu. Mechanika, tuning, diagnostyka i kompleksowa obsługa pojazdów sportowych.">
+    <meta name="keywords"
+        content="drift, warsztat driftowy, tuning, mechanika sportowa, przygotowanie auta do driftu, serwis samochodowy">
+    <meta name="author" content="DriftBoyz">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.driftboyz.pl/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.driftboyz.pl/">
+    <meta property="og:title" content="DriftBoyz - Profesjonalny Warsztat Driftowy">
+    <meta property="og:description"
+        content="Profesjonalny warsztat samochodowy specjalizujący się w przygotowaniu aut do driftu. Mechanika, tuning, diagnostyka.">
+    <meta property="og:image" content="https://www.driftboyz.pl/images/logo-gold-transparent.png">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="DriftBoyz">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.driftboyz.pl/">
+    <meta name="twitter:title" content="DriftBoyz - Profesjonalny Warsztat Driftowy">
+    <meta name="twitter:description"
+        content="Profesjonalny warsztat samochodowy specjalizujący się w przygotowaniu aut do driftu.">
+    <meta name="twitter:image" content="https://www.driftboyz.pl/images/logo-gold-transparent.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html">
-            <img src="images/logo-gold-transparent.png" alt="AutoMaster Logo" class="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Strona Główna</a></li>
-                <li><a href="o-nas.html">O Nas</a></li>
-                <li><a href="uslugi.html">Usługi</a></li>
-                <li><a href="cennik.html">Cennik</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-            </ul>
-        </nav>
-        <div class="header-controls">
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Przełącz motyw">🌙</button>
-            <button class="menu-toggle" aria-label="Menu">☰</button>
+        <div class="header-wrapper">
+            <a href="index.html" class="logo-link">
+                <img src="images/driftboyz-logo-white-transparent.png" alt="DriftBoyz Logo" class="logo logo-dark"
+                    width="180" height="60" loading="eager">
+                <img src="images/driftboyz-logo-black-transparent.png" alt="DriftBoyz Logo" class="logo logo-light"
+                    width="180" height="60" loading="eager">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Strona Główna</a></li>
+                    <li><a href="o-nas.html">O Nas</a></li>
+                    <li><a href="uslugi.html">Usługi</a></li>
+                    <li><a href="cennik.html">Cennik</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="menu-toggle" aria-label="Otwórz menu nawigacji" aria-expanded="false"><svg width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg></button>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="images/logo-gold-transparent.png" alt="AutoMaster" class="hero-logo">
-            <h1>Twój samochód w <span class="gold-text">najlepszych rękach</span></h1>
-            <p>Profesjonalny serwis samochodowy. Mechanika, diagnostyka, klimatyzacja i wulkanizacja. Zaufaj ekspertom z wieloletnim doświadczeniem.</p>
-            <div class="cta-buttons">
-                <a href="cennik.html" class="btn btn-primary">Zobacz Cennik</a>
-                <a href="#kontakt" class="btn btn-outline">Kontakt</a>
-            </div>
-        </div>
-    </section>
+    <main id="main-content">
+        <section class="hero">
+            <!-- Background Image Container -->
+            <div class="hero-bg-image"></div>
 
-    <!-- Social Proof / Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Co mówią nasi klienci</h2>
-                <p>Dołącz do tysięcy zadowolonych kierowców</p>
+            <!-- Smoke animation elements -->
+            <div class="hero-smoke">
+                <div class="smoke smoke-1"></div>
+                <div class="smoke smoke-2"></div>
+                <div class="smoke smoke-3"></div>
             </div>
-            <div class="grid-3">
-                <div class="card testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <blockquote>"Najlepszy serwis w okolicy! Szybka diagnoza, uczciwe ceny i profesjonalna obsługa. Polecam każdemu!"</blockquote>
-                    <p class="author">— Marek K.</p>
-                </div>
-                <div class="card testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <blockquote>"Oddałem auto z problemem silnika, naprawili w jeden dzień. Świetna komunikacja i fair podejście."</blockquote>
-                    <p class="author">— Anna W.</p>
-                </div>
-                <div class="card testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <blockquote>"Korzystam od lat i nigdy nie zawiodłem się na jakości usług. Zawsze wszystko wyjaśnią i doradzą."</blockquote>
-                    <p class="author">— Tomasz S.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Services Preview -->
-    <section class="services-preview" style="background: var(--bg-secondary);">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nasze Usługi</h2>
-                <p>Kompleksowa obsługa Twojego pojazdu</p>
-            </div>
-            <div class="grid-3">
-                <div class="card">
-                    <div class="card-icon">🔧</div>
-                    <h3>Mechanika Pojazdowa</h3>
-                    <p>Przeglądy, naprawy silników, wymiana rozrządu i oleju.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🛑</div>
-                    <h3>Układ Hamulcowy</h3>
-                    <p>Klocki, tarcze, zaciski, płyn i przewody hamulcowe.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💻</div>
-                    <h3>Diagnostyka Komputerowa</h3>
-                    <p>Odczyt błędów, diagnostyka systemów elektronicznych.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">❄️</div>
-                    <h3>Serwis Klimatyzacji</h3>
-                    <p>Uzupełnienie czynnika, dezynfekcja, test szczelności.</p>
-                </div>
-            </div>
-            <div class="show-more-btn">
-                <a href="uslugi.html" class="btn btn-primary">Zobacz Wszystkie Usługi</a>
-            </div>
-        </div>
-    </section>
+            <!-- Background overlay -->
+            <div class="hero-overlay"></div>
 
-    <!-- Contact Section -->
-    <section id="kontakt">
-        <div class="container">
-            <div class="section-title">
-                <h2>Kontakt</h2>
-                <p>Masz pytania? Zadzwoń lub odwiedź nas!</p>
-            </div>
-            <div class="grid-3">
-                <div class="card" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto var(--spacing-sm);">📍</div>
-                    <h3>Adres</h3>
-                    <p>ul. Warsztatowa 15<br>00-001 Warszawa</p>
+            <!-- Centered content -->
+            <div class="hero-content-centered">
+                <div class="hero-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="2.5"></circle>
+                    </svg>
+                    <span>Piastów, ul. Warszawska 49/51</span>
                 </div>
-                <div class="card" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto var(--spacing-sm);">📞</div>
-                    <h3>Telefon</h3>
-                    <p><a href="tel:+48123456789">+48 123 456 789</a></p>
-                </div>
-                <div class="card" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto var(--spacing-sm);">🕐</div>
-                    <h3>Godziny Otwarcia</h3>
-                    <p>Pon-Pt: 8:00 - 18:00<br>Sob: 9:00 - 14:00</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3>AutoMaster Serwis</h3>
-                    <p>Profesjonalny warsztat samochodowy z wieloletnim doświadczeniem. Twój samochód w najlepszych rękach.</p>
+                <h1>Profesjonalny <span class="gold-text">Warsztat Samochodowy</span> w Piastowie</h1>
+
+                <p class="hero-subtitle">Zaawansowana diagnostyka, tuning i serwis na najwyższym poziomie.
+                    Nowoczesne
+                    wyposażenie, doświadczeni mechanicy i podejście do każdego projektu z pasją.</p>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Gwarancja Jakości</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>Szybka Realizacja</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 4l-8 8m0-8l8 8M3 12a9 9 0 1 1 18 0 9 9 0 0 1-18 0"></path>
+                        </svg>
+                        <span>Doświadczeni Mechanicy</span>
+                    </div>
                 </div>
-                <div>
-                    <h3>Szybkie Linki</h3>
-                    <ul>
-                        <li><a href="o-nas.html">O Nas</a></li>
-                        <li><a href="uslugi.html">Usługi</a></li>
-                        <li><a href="cennik.html">Cennik</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kontakt</h3>
-                    <ul>
-                        <li>📍 ul. Warsztatowa 15, Warszawa</li>
-                        <li>📞 +48 123 456 789</li>
-                        <li>✉️ kontakt@automaster.pl</li>
-                    </ul>
+
+                <div class="cta-buttons">
+                    <a href="cennik.html" class="btn btn-primary">
+                        <span>Zobacz Cennik</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#kontakt" class="btn btn-outline" title="Sprawdź dojazd">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="2.5"></circle>
+                        </svg>
+                        <span>Sprawdź dojazd</span>
+                    </a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AutoMaster Serwis. Wszelkie prawa zastrzeżone.</p>
+
+        </section>
+
+        <!-- Social Proof / Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Co mówią nasi klienci</h2>
+                    <p>Dołącz do grona zadowolonych kierowców</p>
+                </div>
+                <div class="grid-3">
+                    <div class="card testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"Najlepszy warsztat driftowy w okolicy! Profesjonalne podejście, szybka
+                            realizacja i
+                            uczciwe ceny. Polecam każdemu!"</blockquote>
+                        <p class="author">— Mateusz K.</p>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"Przygotowali moje auto do sezonu driftowego w ekspresowym tempie. Świetna
+                            komunikacja i profesjonalne podejście."</blockquote>
+                        <p class="author">— Kamil W.</p>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"Korzystam od lat i nigdy się nie zawiodłem. Ekipa, która rozumie potrzeby
+                            kierowców
+                            sportowych."</blockquote>
+                        <p class="author">— Tomasz S.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="services-preview">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nasze Usługi</h2>
+                    <p>Profesjonalna obsługa na najwyższym poziomie</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <article class="service-card service-card-featured">
+                        <div class="service-card-header">
+                            <div class="card-icon-modern">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C1.4 11.3 1 12.1 1 13v3c0 .6.4 1 1 1h2" />
+                                    <circle cx="7" cy="17" r="2" />
+                                    <circle cx="17" cy="17" r="2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Przygotowanie do Driftu</h3>
+                                <p class="service-description">Kompletny setup aut driftowych – zawieszenie, napęd,
+                                    bezpieczeństwo.</p>
+                            </div>
+                        </div>
+                        <ul class="service-features compact">
+                            <li>Montaż klatek bezpieczeństwa i foteli kubełkowych</li>
+                            <li>Przeróbki układu kierowniczego (angle kit)</li>
+                            <li>Hydrauliczne ręczne, blokady dyferencjału</li>
+                        </ul>
+                        <a href="uslugi.html" class="service-link">
+                            Sprawdź szczegóły
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="card-icon-modern">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Mechanika Sportowa</h3>
+                                <p class="service-description">Serwis silników wyczynowych i układów napędowych.</p>
+                            </div>
+                        </div>
+                        <ul class="service-features compact">
+                            <li>Serwis i remonty silników</li>
+                            <li>Wzmocnione sprzęgła i skrzynie biegów</li>
+                            <li>Układy chłodzenia oleju i płynu chłodzącego</li>
+                        </ul>
+                        <a href="uslugi.html" class="service-link">
+                            Zobacz ofertę
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <div class="service-card-header">
+                            <div class="card-icon-modern">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Tuning &amp; Modyfikacje</h3>
+                                <p class="service-description">Zwiększanie mocy, strojenie ECU i układy wydechowe.</p>
+                            </div>
+                        </div>
+                        <ul class="service-features compact">
+                            <li>Chip tuning i strojenie ECU</li>
+                            <li>Montaż turbosprężarek i intercoolerów</li>
+                            <li>Sportowe układy wydechowe</li>
+                        </ul>
+                        <a href="uslugi.html" class="service-link">
+                            Więcej usług
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="services-bottom">
+                    <p class="services-callout">Potrzebujesz innej usługi? Sprawdź pełną ofertę</p>
+                    <a href="uslugi.html" class="btn btn-primary">
+                        <span>Zobacz Wszystkie Usługi</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Contact Info -->
+                    <div class="contact-info-card">
+                        <div class="contact-header">
+                            <h3>Dane Kontaktowe</h3>
+                            <p>Zapraszamy do naszego warsztatu</p>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Adres</strong>
+                                    <p>ul. Warszawska 49/51<br>05-820 Piastów</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Telefon</strong>
+                                    <p><a href="tel:+48515063677">515 063 677</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:kontakt@driftboyz.pl">kontakt@driftboyz.pl</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Godziny otwarcia</strong>
+                                    <p>Pn-Pt: 08:00 - 18:00<br>Sob: 09:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps -->
+                    <div class="map-wrapper">
+                        <div class="map-container">
+                            <iframe
+                                src="https://maps.google.com/maps?q=ul.+Warszawska+49%2F51,+Piast%C3%B3w+05-820&t=m&z=15&output=embed&iwloc=near"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Lokalizacja DriftBoyz - Piastów">
+                            </iframe>
+                        </div>
+                        <div class="map-note">
+                            <a href="https://maps.google.com/maps?q=ul.+Warszawska+49%2F51,+Piast%C3%B3w+05-820"
+                                target="_blank" rel="noopener noreferrer">
+                                Otwórz w Google Maps →
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div>
+                        <h3>DriftBoyz</h3>
+                        <p>Profesjonalny warsztat specjalizujący się w przygotowaniu aut do driftu. Twoje auto,
+                            nasza
+                            pasja.</p>
+                    </div>
+                    <div>
+                        <h3>Szybkie Linki</h3>
+                        <ul>
+                            <li><a href="o-nas.html">O Nas</a></li>
+                            <li><a href="uslugi.html">Usługi</a></li>
+                            <li><a href="cennik.html">Cennik</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Kontakt</h3>
+                        <ul>
+                            <li>📍 Piastów, ul. Warszawska 49/51</li>
+                            <li>📞 <a href="tel:+48515063677">515 063 677</a></li>
+                            <li>✉️ <a href="mailto:kontakt@driftboyz.pl">kontakt@driftboyz.pl</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Śledź Nas</h3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="YouTube" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 DriftBoyz. Wszelkie prawa zastrzeżone.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Przewiń do góry" title="Przewiń do góry">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
 
     <script src="js/main.js"></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "DriftBoyz",
+        "image": "https://www.driftboyz.pl/images/logo-gold-transparent.png",
+        "description": "Profesjonalny warsztat specjalizujący się w przygotowaniu aut do driftu. Mechanika sportowa, tuning, diagnostyka i kompleksowa obsługa pojazdów.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Warszawska 49/51",
+            "addressLocality": "Piastów",
+            "postalCode": "05-820",
+            "addressCountry": "PL"
+        },
+        "url": "https://www.driftboyz.pl",
+        "telephone": "+48515063677",
+        "email": "kontakt@driftboyz.pl",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "14:00"
+            }
+        ],
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Usługi warsztatowe",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mechanika Sportowa",
+                        "description": "Serwis silników, układów napędowych i zawieszenia"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tuning & Modyfikacje",
+                        "description": "Profesjonalne modyfikacje zwiększające osiągi"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Przygotowanie do Driftu",
+                        "description": "Kompleksowe przygotowanie auta do zawodów"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Diagnostyka Komputerowa",
+                        "description": "Zaawansowana diagnostyka systemów elektronicznych"
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "3"
+        }
+    }
+    </script>
 </body>
+
 </html>
